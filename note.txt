@@ -2,7 +2,6 @@
 > pip freeze > pip-requirements.txt
 > pip uninstall -r pip-requirements.txt -y
 
-
 > pip install virtualenv //가상 환경 설치
 > virtualenv "가상환경이름_venv"
 > cd scripts
@@ -10,26 +9,10 @@
 > cd ..
 
 > pip install django //장고 설치
-> pip install flake8 // > flake8 "파일이름".py //명령어 시 파이썬이 지향하는 코드인지 체크
 
-서버 만들기
-> django-admin startproject "프로젝트명" . // 점 찍어야 한개 생김. 두개 생기면 하위 이름도 못 바꿈
-> tree /F "프로젝트명" //
-> python manage.py runserver //서버 실행
+https://docs.djangoproject.com/ko/3.0/intro/tutorial01/
 
-앱 만들기
-> django-admin startapp myBoard
-> django-admin startapp myUser
-=> myBoard 하위에 templates 디렉토리 추가
-=> myUser 하위에 templates 디렉토리 추가
 
-settings.py
-=> 사용자가 만든 앱(app) 등록하기
-INSTALLED_APPS += [
-    '"프로젝트명".myBoard',
-    '"프로젝트명".myUser',
-]
-url연결해주기
 
 > python manage.py createsuperuser //admin 만들기
 
