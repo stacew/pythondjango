@@ -1,0 +1,28 @@
+https://wikidocs.net/
+
+https://www.python.org/dev/peps/pep-0008
+https://www.python.org/dev/peps/pep-0020
+https://www.python.org/dev/peps/pep-3156 //3.4이후 새로 추가된 라이브러리
+
+python 2.x -> 3.x ㅂ녀화
+print 괄호가 생김
+long -> int로 통일
+int/int 결과 float으로 처리
+예약어 : 30개 소문자
+식별자
+
+django MVT 패턴 Model(=model) Template(=view) View(=controller) 패턴
+> django-admin startapp 앱 추가 명령 시, M,V를 기본으로 생성. T는 없음.
+
+docs.djangoproject.com
+
+
+CSRF 공격이란?
+CSRF 공격(Cross Site Request Forgery)은 웹 어플리케이션 취약점 중 하나로,
+인터넷 사용자(희생자)가 자신의 의지와는 무관하게 공격자가 의도한 행위(수정, 삭제, 등록 등)를
+ 특정 웹사이트에 요청하게 만드는 공격
+{% csrf_token %}
+클라이언트에서 해당 페이지를 접속하게 되면
+Django 에서 자동으로 csrf_token을 클라이언트로 보내어 cookie에 저장시키고,
+POST로 전송할 때 cookie의 csrf_token 이 함께 전송되어 인증하는 방식이다
+
